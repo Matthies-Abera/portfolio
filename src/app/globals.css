@@ -56,12 +56,10 @@ ul {
 
 /* MOBILE - MEDIUM */
 @media (min-width: 375px) {
-    
 }
 
 /* MOBILE - LARGE */
-@media (min-width: 425px) {
-    
+@media (min-width: 425px) {  
 }
 
 /* TABLET */
@@ -70,15 +68,12 @@ ul {
 
 /* LAPTOP */
 @media (min-width: 1024px) {
-    
 }
 
 /* LAPTOP - LARGE */
 @media (min-width: 1440px) {
-    
 }
 
 /* 4K */
 @media (min-width: 2560px) {
-    
 }

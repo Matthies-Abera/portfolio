@@ -1,10 +1,9 @@
 // TODO: IMPLEMENT ACTIVE STATE FOR SECTIONS
-
-"use client";
-import { useState } from 'react';
+"use client"
 import styles from '../styles/Navbar.module.css'
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +14,11 @@ export default function Navbar() {
 
     const handleSelection = () => {
         setIsOpen(false);
-      }
+    }
 
     return (
-        <section className={styles.navbar}>
-            <div className={styles.navbarHeader}>
+        <section className={styles.nav}>
+            <div className={styles.navHeader}>
                 <h5 className={styles.navLogo}>M.</h5>
                 <Image
                     src={isOpen ? require('/public/icons/close.svg') : require('/public/icons/hamburger.svg')}
@@ -28,7 +27,6 @@ export default function Navbar() {
                     alt='nav bar open and close icon'
                 />
             </div>
-            
 
             <ul className={[styles.navList, isOpen && styles.navListOpen].join(' ')}>
                 <Link href="#hero" onClick={handleSelection}>Home</Link>
