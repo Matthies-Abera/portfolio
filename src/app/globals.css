@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Poppins:wght@500;700&display=swap');
+
+:root {
+  --black: #2D2E32;
+  --form-dark: #161616;
+  --form-light: #1D1D1D;
+  --neutral-offset: #F7F7F7;
+  --neutral: #FFFFFF;
+  --primary: #147EFB;
+  --subtext: #767676;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(even) {
+  background-color: var(--neutral-offset);
+}
+
+section:nth-child(odd) {
+  background-color: var(--neutral);
+}
+
+section:last-child {
+  background-color: var(--form-dark);
+}
+
+/* MOBILE - MEDIUM */
+@media (min-width: 375px) {
+    
+}
+
+/* MOBILE - LARGE */
+@media (min-width: 425px) {
+    
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* LAPTOP */
+@media (min-width: 1024px) {
+    
+}
+
+/* LAPTOP - LARGE */
+@media (min-width: 1440px) {
+    
+}
+
+/* 4K */
+@media (min-width: 2560px) {
+    
+}

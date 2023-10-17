@@ -3,7 +3,15 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
-      Hello World
+      {/* NAVIGATION BAR */}
+
+      {/* HERO SECTION */}
+
+      {/* ABOUT ME SECTION */}
+
+      {/* PROJECTS SECTION */}
+
+      {/* CONTACT ME FOOTER */}
     </main>
   )
 }
