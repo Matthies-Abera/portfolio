@@ -1,0 +1,19 @@
+.row {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    justify-items: flex-start;
+}
+
+.row h5 {
+    padding: 0 2rem 0 0.5rem;
+}
+
+.row img {
+    height: auto;
+    width: 2rem;
+}
+
+.row p {
+    justify-self: flex-end;
+}

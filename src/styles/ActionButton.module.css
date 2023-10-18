@@ -1,0 +1,45 @@
+.active {
+    text-decoration: underline solid var(--primary) 0.25rem;
+    text-underline-offset: 0.65rem;
+}
+
+.button {
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+.button img {
+    height: auto;
+    width: 2rem;
+}
+
+.button p {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .button::after {
+        background-color: var(--primary);
+        bottom: 0.5rem;
+        content: '';
+        height: 0.25rem;
+        left: 0;
+        position: absolute;
+        transform-origin: bottom right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-out;
+        width: 100%;
+    }
+
+    .button:hover::after {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+
+    .button p {
+        color: var(--black);
+        font-weight: bold;
+        font-size: inherit;
+    }
+}

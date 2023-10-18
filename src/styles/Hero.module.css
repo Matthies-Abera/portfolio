@@ -31,6 +31,8 @@
     align-self: flex-end;
     display: flex;
     height: auto;
+    justify-self: center;
+    max-width: 29.5rem;
     width: 100%;
 }
 

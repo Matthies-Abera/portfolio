@@ -1,3 +1,4 @@
+import AboutMe from '@/components/AboutMe'
 import styles from './page.module.css'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
@@ -7,6 +8,7 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Hero />
+      <AboutMe />
       <section></section>
     </main>
   )
