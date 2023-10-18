@@ -17,3 +17,9 @@
 .row p {
     justify-self: flex-end;
 }
+
+@media (min-width: 768px) {
+    .row {
+        width: clamp(20rem, calc(50dvw - 4rem), 35rem);
+    }
+}

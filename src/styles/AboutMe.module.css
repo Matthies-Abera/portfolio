@@ -29,34 +29,29 @@
 }
 
 .imageMobile > img {
-    height: auto;
-    object-fit: contain;
+    height: inherit;
+    object-fit: cover;
+    width: inherit;
 }
 
 .interests {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
     justify-self: center;
-    max-width: 25rem;
-    justify-items: center;
 }
 
 @media (min-width: 768px) {
     .aboutMe {
         display: grid;
-        gap: 1rem;
+        gap: 1.5rem;
         grid-template-areas:
             'image contact'
             'image interests'
         ;
         grid-template-columns: repeat(2, 50%);
         max-width: inherit;
-    }
-
-    .actionButtons {
-        max-width: 22.5rem;
-        width: calc(50dvw - 2rem);
     }
 
     .description, .interests {
