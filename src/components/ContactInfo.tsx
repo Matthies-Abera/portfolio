@@ -1,7 +1,13 @@
 import styles from '../styles/ContactInfo.module.css'
 import Image from 'next/image'
 
-export default function ContactInfo(props:{icon: typeof import("*.svg"), type: string, value: string}) {
+interface ContactInfo {
+    icon: typeof import("*.svg"),
+    type: string,
+    value: string
+}
+
+export default function ContactInfo(props: ContactInfo) {
     return (
         <div className={styles.row}>
             <Image src={props.icon} alt={props.type} />

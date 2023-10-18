@@ -1,7 +1,14 @@
 import styles from '../styles/ActionButton.module.css'
 import Image from 'next/image'
 
-export default function ActionButton(props:{icon: typeof import("*.svg"), name: string, active: string, function: (params: any) => any;}) {
+interface ActionButton {
+    active: string,
+    function: (params: any) => any,
+    icon: typeof import("*.svg"),
+    name: string
+}
+
+export default function ActionButton(props: ActionButton) {
     function isActive() {
         if (props.active.toUpperCase() == props.name.toUpperCase()) return true;
         return false;

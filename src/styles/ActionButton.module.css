@@ -39,7 +39,7 @@
 
     .button p {
         color: var(--black);
-        font-weight: bold;
         font-size: inherit;
+        font-weight: bold;
     }
 }

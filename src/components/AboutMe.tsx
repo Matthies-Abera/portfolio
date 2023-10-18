@@ -1,13 +1,12 @@
 "use client"
 import styles from '../styles/AboutMe.module.css'
-import Image from 'next/image'
-import ContactInfo from './ContactInfo'
 import ActionButton from './ActionButton'
+import ContactInfo from './ContactInfo'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function AboutMe() {
     const [interest, setInterest] = useState('sports');
-
     const handleInterest = (selected: string) => {
         setInterest(selected);
     }

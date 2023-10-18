@@ -21,17 +21,17 @@
     display: none;
 }
 
+.imageDesktop > img, .imageMobile > img {
+    height: inherit;
+    object-fit: cover;
+    width: inherit;
+}
+
 .imageMobile {
     align-self: center;
     display: flex;
     height: clamp(15rem, 120dvw, 32.5rem);
     width: clamp(10rem, calc(100dvw - 2rem), 25rem);
-}
-
-.imageMobile > img {
-    height: inherit;
-    object-fit: cover;
-    width: inherit;
 }
 
 .interests {
@@ -68,11 +68,6 @@
         grid-area: image;
         height: 31.25rem;
         width: 23.5rem;
-    }
-
-    .imageDesktop > img {
-        height: auto;
-        object-fit: cover;
     }
     
     .imageMobile {
