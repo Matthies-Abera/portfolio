@@ -19,8 +19,8 @@ export default function AboutMe() {
                 <div className={styles.description}>
                     <h1>About Me</h1>
                     <p>
-                        I am driven by a love for challenging sport feats and outdoor adventures, always seeking to push my boundaries.
-                        As a proficient front-end web developer, I excel in HTML5, CSS3, and JavaScript, utilizing my skills to create engaging user interfaces.
+                        I am driven by a love for challenging sport feats and outdoor adventures, always seeking to push my boundaries.<br/><br/>
+                        As a proficient front-end web developer, I excel in HTML5, CSS3, and JavaScript, utilizing my skills to create engaging user interfaces.<br/><br/>
                         With a passion for both sports and design, I strive to craft captivating web experiences that inspire and captivate users.
                     </p>
                     <div className={styles.contactInfo}>

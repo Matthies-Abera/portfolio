@@ -1,0 +1,20 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.projects > h1 {
+    color: var(--primary);
+}
+
+.projects > h2 {
+    color: var(--subtext);
+}
+
+@media (min-width: 768px) {
+    .projects {
+        text-align: left;
+    }
+}

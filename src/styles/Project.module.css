@@ -1,0 +1,87 @@
+.button {
+    box-shadow: 0 0.2rem 0.75rem rgb(0 0 0 / 0.2); 
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.links, .stackContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.link {
+    align-content: center;
+    color: var(--black);
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: bold;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    text-decoration: none;
+}
+
+.link img {
+    height: auto;
+    width: 1rem;
+}
+
+.project {
+    align-self: center;
+    background-color: var(--neutral);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.75rem rgb(0 0 0 / 0.2);
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+    max-width: 25rem;
+    padding: 1.5em;
+    width: calc(100dvw - 6rem);
+}
+
+.websiteDetails {
+    text-align: center;
+}
+
+.websiteImage {
+    height: clamp(6rem, calc(60dvw - 4.8rem), 15rem);
+    width: clamp(10rem, calc(100dvw - 8rem), 25rem);
+}
+
+.websiteImage img {
+    height: inherit;
+    object-fit: cover;
+    width: inherit;
+}
+
+@media (min-width: 768px) {
+    .project {
+        gap: 1rem;
+        grid-template-areas: 'left right';
+        grid-template-columns: repeat(2, clamp(10rem, calc(50dvw - 4rem), 27.5rem));
+        max-width: 55rem;
+        padding: 1.5rem;
+    }
+
+    .project:nth-child(even) .websiteDetails {
+        grid-area: left;
+    }
+
+    .websiteDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .websiteDetails > * {
+        width: clamp(10rem, calc(50dvw - 4rem), 27.5rem);
+    }
+
+    .websiteImage {
+        height: clamp(6rem, calc(30dvw - 2.4rem), 16.5rem);
+        width: clamp(10rem, calc(50dvw - 4rem), 27.5rem);
+    }
+}

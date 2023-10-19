@@ -51,7 +51,7 @@
             'image interests'
         ;
         grid-template-columns: repeat(2, 50%);
-        max-width: inherit;
+        max-width: 73.75rem;
     }
 
     .description, .interests {
