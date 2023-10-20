@@ -12,7 +12,7 @@ export default function AboutMe() {
     }
 
     return (
-        <section>
+        <section id='about'>
             <span className={styles.aboutMe}>
                 <div className={styles.imageDesktop}><Image src={require(`/public/images/${interest}.jpg`)} alt='selected image'/></div>
 

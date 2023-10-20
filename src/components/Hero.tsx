@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Hero() {
     return (
-        <section className={styles.hero}>
+        <section id='hero' className={styles.hero}>
             <span>
                 <div className={styles.infoContainer}>
                     <h1>Front-End React Developer</h1>

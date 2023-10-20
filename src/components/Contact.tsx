@@ -38,7 +38,7 @@ export default function Contact() {
     };
         
     return (
-        <section>
+        <section id='contact'>
             <span className={styles.contact}>
                 <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
                     <FormTextInput heading='full name' value='name' {...register('name')}/>

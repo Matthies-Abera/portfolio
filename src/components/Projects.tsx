@@ -9,7 +9,7 @@ export default function Projects() {
     }
 
     return (
-        <section>
+        <section id='projects'>
             <span className={styles.projects}>
                 <h1>PORTFOLIO</h1>
                 <h4>Each project is a unique piece of development</h4>
