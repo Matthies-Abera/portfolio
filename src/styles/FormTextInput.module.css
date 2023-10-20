@@ -1,0 +1,20 @@
+.formTextInput {
+    color: var(--neutral);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    gap: 0.25rem;
+}
+
+.formTextInput input {
+    background-color: var(--form-light);
+    border-radius: 0.5rem;
+    border: none;
+    height: 3rem;
+}
+
+.moreInformation {
+    display: flex;
+    height: 6rem !important;
+    resize: none;
+}

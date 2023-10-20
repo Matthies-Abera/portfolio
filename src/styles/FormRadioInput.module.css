@@ -1,0 +1,26 @@
+.formRadioInput label {
+    color: var(--neutral);
+    font-family: 'Poppins';
+}
+
+.formRadioGrid {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.formRadioGrid img {
+    width: 2rem;
+}
+
+.formRadioGrid label {
+    background-color: var(--form-light);
+    border-radius: 0.5rem;
+    display: grid;
+    font-size: 0.75rem;
+    justify-items: center;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}

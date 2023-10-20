@@ -1,0 +1,29 @@
+.contact {
+    display: grid;
+    justify-items: center;
+}
+
+.contactForm {
+    display: grid;
+    gap: 1rem;
+    max-width: 25rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contactForm {
+        gap: 1rem;
+        grid-template-areas: 
+            'name email'
+            'timeline budget'
+            'project project'
+            'moreInformation moreInformation'
+            'submit submit'
+        ;
+        max-width: 73.75rem;
+    }
+
+    .contactForm > input:last-child {
+        grid-area: submit;
+    }
+}
