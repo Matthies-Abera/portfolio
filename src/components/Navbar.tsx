@@ -1,9 +1,9 @@
-// TODO: IMPLEMENT ACTIVE STATE FOR SECTIONS
 "use client"
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import Scrollspy from 'react-scrollspy'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +29,17 @@ export default function Navbar() {
                     />
                 </div>
 
-                <ul className={[styles.navList, isOpen && styles.navListOpen].join(' ')}>
+                <Scrollspy
+                    items={['hero', 'about', 'projects', 'contact']}
+                    currentClassName={styles.navListActive}
+                    offset={-100}
+                    className={[styles.navList, isOpen && styles.navListOpen].join(' ')}
+                >
                     <Link href="#hero" onClick={handleSelection}>Home</Link>
                     <Link href="#about" onClick={handleSelection}>About Me</Link>
                     <Link href="#projects" onClick={handleSelection}>Projects</Link>
                     <Link href="#contact" onClick={handleSelection}>Contact</Link>
-                </ul>
+                </Scrollspy>
             </div>
         </div>
     )

@@ -19,9 +19,10 @@
 }
 
 .navbar {
+    background-color: var(--neutral);
     display: flex;
     padding: 1rem 2rem;
-    width: 100dvw;
+    width: calc(100dvw - 4rem);
 }
 
 .navHeader {
@@ -35,13 +36,14 @@
 .navList {
     align-items: center;
     background-color: var(--form-light);
-    bottom: 100dvh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     height: calc(100dvh - 4.25rem);
     justify-content: center;
+    left: 0;
     position: absolute;
+    top: -100dvh;
     width: 100dvw;
 }
 
@@ -51,8 +53,8 @@
 }
 
 .navListOpen {
-    bottom: -1rem;
-    transition: bottom 1s;
+    top: 3.25rem;
+    transition: top 0.75s;
 }
 
 .navLogo {
@@ -85,6 +87,7 @@
         margin: 0;
         padding-right: 4rem;
         position: relative;
+        top: 0;
         transition: none;
     }
 
@@ -113,7 +116,7 @@
     }
 
     .navListActive {
-        text-decoration: underline solid var(--accent) 0.25rem;
-        text-underline-offset: 0.5rem;
+        text-decoration: underline solid var(--primary) 0.25rem !important;
+        text-underline-offset: 0.5rem !important;
     }
 }
