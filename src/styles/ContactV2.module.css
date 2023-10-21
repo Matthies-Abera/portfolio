@@ -1,0 +1,83 @@
+.contact {
+    display: grid;
+    justify-items: center;
+}
+
+.contactForm {
+    display: grid;
+    gap: 1rem;
+    max-width: 25rem;
+    width: 100%;
+}
+
+.contactForm h4 {
+    color: var(--neutral);
+    font-weight: normal;
+}
+
+.formRadioInput label {
+    color: var(--neutral);
+    font-family: 'Poppins';
+}
+
+.formRadioGrid {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.formRadioGrid img {
+    height: auto;
+    width: 2rem;
+}
+
+.formRadioGrid label {
+    background-color: var(--form-light);
+    border-radius: 0.5rem;
+    display: grid;
+    font-size: 0.75rem;
+    justify-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.formTextInput {
+    color: var(--neutral);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    gap: 0.25rem;
+}
+
+.formTextInput input {
+    background-color: var(--form-light);
+    border-radius: 0.5rem;
+    border: none;
+    height: 3rem;
+}
+
+.moreInformation {
+    display: flex;
+    height: 6rem !important;
+    margin-top: 0.25rem !important;
+    resize: none;
+}
+
+@media (min-width: 768px) {
+    .contactForm {
+        gap: 1rem;
+        grid-template-areas: 
+            'name email'
+            'timeline budget'
+            'project moreInformation'
+            'submit submit'
+        ;
+        max-width: 73.75rem;
+    }
+
+    .contactForm > input:last-child {
+        grid-area: submit;
+    }
+}

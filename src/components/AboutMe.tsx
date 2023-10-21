@@ -32,7 +32,7 @@ export default function AboutMe() {
 
                 <div className={styles.interests}>
                     <h2>My Interests</h2>
-                    <div className={styles.imageMobile}><Image src={require(`/public/images/${interest}.jpg`)} alt='selected image'/></div>
+                    <div className={styles.imageMobile}><Image src={require(`/public/images/${interest}.jpg`)} priority={true} alt='selected image'/></div>
                     <div className={styles.actionButtons}>
                         <ActionButton icon={require('/public/icons/sports.svg')} name='Sports' active={interest} function={() => handleInterest('sports')}/>
                         <ActionButton icon={require('/public/icons/explore.svg')} name='Explore' active={interest} function={() => handleInterest('explore')}/>

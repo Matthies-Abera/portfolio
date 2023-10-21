@@ -18,7 +18,7 @@
     z-index: 2;
 }
 
-.navbar {
+.nav > div {
     background-color: var(--neutral);
     display: flex;
     padding: 1rem 2rem;
@@ -47,6 +47,11 @@
     width: 100dvw;
 }
 
+.navHeader > img {
+    height: 100%;
+    width: auto;
+}
+
 .navList a {
     color: var(--neutral);
     text-decoration: none;
@@ -64,8 +69,13 @@
 }
 
 @media (min-width: 768px) {
-    .navbar {
+    .nav > div {
         max-width: 73.75rem;
+    }
+
+    .navActive ul a {
+        text-decoration: underline solid var(--primary) 0.25rem !important;
+        text-underline-offset: 0.5rem !important;
     }
 
     .navHeader {
@@ -113,10 +123,5 @@
     .navList a:hover::after {
         transform-origin: bottom left;
         transform: scaleX(1);
-    }
-
-    .navListActive {
-        text-decoration: underline solid var(--primary) 0.25rem !important;
-        text-underline-offset: 0.5rem !important;
     }
 }

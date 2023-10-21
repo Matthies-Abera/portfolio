@@ -17,4 +17,5 @@
     display: flex;
     height: 6rem !important;
     resize: none;
+    margin-top: 0.25rem !important;
 }

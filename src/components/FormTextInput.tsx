@@ -8,7 +8,7 @@ interface FormTextInput {
 export default function FormTextInput(props: FormTextInput) {
     return (
         <div className={styles.formTextInput}>
-            <label htmlFor={props.value}>{props.heading.toUpperCase()}</label>
+            <h4>{props.heading.toUpperCase()}</h4>
             {
                 props.value == 'info'
                 ?   <textarea id={props.value} className={styles.moreInformation} required/>

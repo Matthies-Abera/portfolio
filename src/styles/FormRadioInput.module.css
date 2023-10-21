@@ -22,6 +22,6 @@
     display: grid;
     font-size: 0.75rem;
     justify-items: center;
-    padding-bottom: 0.5rem;
+    padding: 1rem 0;
     width: 100%;
 }

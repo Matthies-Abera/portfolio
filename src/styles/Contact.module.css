@@ -10,6 +10,11 @@
     width: 100%;
 }
 
+.contactForm h4 {
+    color: var(--neutral);
+    font-weight: normal;
+}
+
 @media (min-width: 768px) {
     .contactForm {
         gap: 1rem;

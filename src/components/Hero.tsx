@@ -18,6 +18,7 @@ export default function Hero() {
 
                 <Image
                     src={require('/public/images/headshot.png')}
+                    priority={true}
                     alt='headshot'
                     className={styles.image}
                 />

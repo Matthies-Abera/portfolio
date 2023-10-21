@@ -5,7 +5,7 @@ import { FormRadioInput } from '@/utils/interfaces'
 export default function FormRadioInput(props: FormRadioInput) {
     return (
         <div className={styles.formRadioInput}>
-            <label htmlFor={props.htmlFor}>{props.heading.toUpperCase()}</label>
+            <h4>{props.heading.toUpperCase()}</h4>
             <div className={styles.formRadioGrid}>
                 {props.radioButtons.map(button => 
                     <label htmlFor={button.id} key={button.id}>

@@ -2,7 +2,7 @@
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Scrollspy from 'react-scrollspy'
+import ScrollspyNav from 'react-scrollspy-nav'
 import { useState } from 'react'
 
 export default function Navbar() {
@@ -18,7 +18,12 @@ export default function Navbar() {
 
     return (
         <div className={styles.nav}>
-            <div className={styles.navbar}>
+            <ScrollspyNav
+                scrollTargetIds={['hero', 'about', 'projects', 'contact']}
+                offset={-100}
+                activeNavClass={styles.navActive}
+                scrollDuration={10}
+            >
                 <div className={styles.navHeader}>
                     <h5 className={styles.navLogo}>M.</h5>
                     <Image
@@ -29,18 +34,13 @@ export default function Navbar() {
                     />
                 </div>
 
-                <Scrollspy
-                    items={['hero', 'about', 'projects', 'contact']}
-                    currentClassName={styles.navListActive}
-                    offset={-100}
-                    className={[styles.navList, isOpen && styles.navListOpen].join(' ')}
-                >
+                <ul className={[styles.navList, isOpen && styles.navListOpen].join(' ')}> 
                     <Link href="#hero" onClick={handleSelection}>Home</Link>
                     <Link href="#about" onClick={handleSelection}>About Me</Link>
                     <Link href="#projects" onClick={handleSelection}>Projects</Link>
                     <Link href="#contact" onClick={handleSelection}>Contact</Link>
-                </Scrollspy>
-            </div>
+                </ul>
+            </ScrollspyNav>
         </div>
     )
 }
