@@ -1,7 +1,7 @@
-// TODO: ALLOW DOWNLOADING DV
 import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Resume } from '../utils/mockAssets'
 
 export default function Hero() {
     return (
@@ -12,14 +12,7 @@ export default function Hero() {
                     <p>Hi, I&apos;m Matthies Abera. A passionate Front-end React Developer based in Melbourne, Australia.</p>
                     <div className={styles.buttons}>
                         <Link href='#contact' className={styles.button}><h4>Contact Me</h4></Link>
-                        <Link
-                            href={''}
-                            // target='_blank'
-                            // rel='noopener noreferrer'
-                            className={styles.button}
-                        >
-                            <h4>Download CV</h4>
-                        </Link> 
+                        <Link href={Resume} target='_blank' className={styles.button}><h4>Download CV</h4></Link> 
                     </div>
                 </div>
 
