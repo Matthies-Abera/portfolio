@@ -17,23 +17,25 @@ export default function Navbar() {
     }
 
     return (
-        <section className={styles.nav}>
-            <div className={styles.navHeader}>
-                <h5 className={styles.navLogo}>M.</h5>
-                <Image
-                    src={isOpen ? require('/public/icons/close.svg') : require('/public/icons/hamburger.svg')}
-                    onClick={handleClick}
-                    className={styles.icon}
-                    alt='nav bar open and close icon'
-                />
-            </div>
+        <div className={styles.nav}>
+            <div className={styles.navbar}>
+                <div className={styles.navHeader}>
+                    <h5 className={styles.navLogo}>M.</h5>
+                    <Image
+                        src={isOpen ? require('/public/icons/close.svg') : require('/public/icons/hamburger.svg')}
+                        onClick={handleClick}
+                        className={styles.icon}
+                        alt='nav bar open and close icon'
+                    />
+                </div>
 
-            <ul className={[styles.navList, isOpen && styles.navListOpen].join(' ')}>
-                <Link href="#hero" onClick={handleSelection}>Home</Link>
-                <Link href="#about" onClick={handleSelection}>About Me</Link>
-                <Link href="#projects" onClick={handleSelection}>Projects</Link>
-                <Link href="#contact" onClick={handleSelection}>Contact</Link>
-            </ul>
-        </section>
+                <ul className={[styles.navList, isOpen && styles.navListOpen].join(' ')}>
+                    <Link href="#hero" onClick={handleSelection}>Home</Link>
+                    <Link href="#about" onClick={handleSelection}>About Me</Link>
+                    <Link href="#projects" onClick={handleSelection}>Projects</Link>
+                    <Link href="#contact" onClick={handleSelection}>Contact</Link>
+                </ul>
+            </div>
+        </div>
     )
 }

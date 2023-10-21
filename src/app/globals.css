@@ -74,6 +74,12 @@ h4 {
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 4.25em;
+}
+
+main {
+  display: grid;
+  justify-items: center;
 }
 
 p {
