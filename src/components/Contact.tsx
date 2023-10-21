@@ -5,7 +5,7 @@ import FormRadioInput from './FormRadioInput'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { useForm } from 'react-hook-form'
-import { projectOptions } from '@/utils/mockAssets'
+import { projectOptions } from '@/utils/mockData'
 
 export default function Contact() {
     const form = useRef(null);

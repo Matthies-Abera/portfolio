@@ -2,8 +2,8 @@
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import Scrollspy from 'react-scrollspy'
+import { useState } from 'react'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

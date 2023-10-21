@@ -1,7 +1,7 @@
 import styles from '../styles/Project.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Project } from '../utils/mockAssets'
+import { Project } from '../utils/interfaces'
 
 export default function Project(props: Project) {
   return (

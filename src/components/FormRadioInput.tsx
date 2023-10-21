@@ -1,6 +1,6 @@
 import styles from '../styles/FormRadioInput.module.css'
 import Image from 'next/image'
-import { FormRadioInput } from '@/utils/mockAssets'
+import { FormRadioInput } from '@/utils/interfaces'
 
 export default function FormRadioInput(props: FormRadioInput) {
     return (

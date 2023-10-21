@@ -1,6 +1,6 @@
 import styles from '../styles/Projects.module.css'
 import Project from './Project';
-import { projects } from '../utils/mockAssets'
+import { projects } from '../utils/mockData'
 
 export default function Projects() {
     function isEmpty() {
