@@ -16,8 +16,7 @@
         grid-template-areas: 
             'name email'
             'timeline budget'
-            'project project'
-            'moreInformation moreInformation'
+            'project moreInformation'
             'submit submit'
         ;
         max-width: 73.75rem;
