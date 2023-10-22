@@ -12,7 +12,7 @@ describe('Navbar Component', () => {
         render(<Navbar />);
         const logo = screen.getByRole('business-logo');
         expect(logo).toBeInTheDocument();
-    })
+    }),
 
     it('should initially dislplay hamburger icon', () => {
         render(<Navbar />);

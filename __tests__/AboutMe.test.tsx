@@ -13,7 +13,7 @@ describe('About Me Component', () => {
         const contactInfoContainer = screen.getByRole('contact-info');
         const details = contactInfoContainer.querySelectorAll('div');
         expect(details.length).toEqual(3);
-    })
+    }),
 
     it('should display four interest types', () => {
         render(<AboutMe />);
