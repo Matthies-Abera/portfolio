@@ -91,7 +91,7 @@ export default function ContactV2() {
                                 <textarea id='info' {...register("moreInfo")} className={styles.moreInformation} required/>
                             </div>
 
-                            <input type="submit" value="SUBMIT PROJECT"/>
+                            <input type="submit" value="SUBMIT PROJECT" role='submit'/>
                         </form>
                     </span>
                 </section>

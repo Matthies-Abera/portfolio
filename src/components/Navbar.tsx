@@ -25,7 +25,7 @@ export default function Navbar() {
                 scrollDuration={10}
             >
                 <div className={styles.navHeader}>
-                    <h5 className={styles.navLogo}>M.</h5>
+                    <h5 className={styles.navLogo} role='business-logo'>M.</h5>
                     <Image
                         src={isOpen ? require('/public/icons/close.svg') : require('/public/icons/hamburger.svg')}
                         onClick={handleClick}

@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section id='hero' className={styles.hero}>
             <span>
-                <div className={styles.infoContainer}>
+                <div className={styles.infoContainer} role='details-container'>
                     <h1>Front-End React Developer</h1>
                     <p>Hi, I&apos;m Matthies Abera. A passionate Front-end React Developer based in Melbourne, Australia.</p>
                     <div className={styles.buttons}>

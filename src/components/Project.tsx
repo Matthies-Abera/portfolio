@@ -5,7 +5,7 @@ import { Project } from '../utils/interfaces'
 
 export default function Project(props: Project) {
   return (
-    <div className={styles.project}>
+    <div className={styles.project} role='project'>
       <div className={styles.websiteImage}><Image src={props.image} alt='website snapshot'/></div>
 
       <div className={styles.websiteDetails}>
