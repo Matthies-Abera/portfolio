@@ -15,6 +15,24 @@
     font-weight: normal;
 }
 
+.emailBanner {
+    align-items: center;
+    color: var(--neutral);
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+}
+
+.emailBanner > img {
+    height: auto;
+    width: 1.25rem;
+}
+
+.emailSent {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
 .formRadioInput label {
     color: var(--neutral);
     font-family: 'Poppins';
@@ -72,6 +90,7 @@
             'name email'
             'timeline budget'
             'project moreInformation'
+            'message message'
             'submit submit'
         ;
         max-width: 73.75rem;

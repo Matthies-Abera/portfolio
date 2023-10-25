@@ -8,6 +8,7 @@ import Image from 'next/image'
 export default function ContactV2() {
     const form = useRef(null);
     const [isClient, setIsClient] = useState(false);
+    const [hasSentEmail, setHasSentEmail] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
@@ -33,6 +34,7 @@ export default function ContactV2() {
         .then((result: { text: any }) => {
             console.log(result.text);
             console.log("message sent");
+            setHasSentEmail(true);
         }, (error: { text: any }) => {
             console.log(error.text);
         });
@@ -89,6 +91,11 @@ export default function ContactV2() {
                             <div className={styles.formTextInput}>
                                 <h4>MORE INFORMATION</h4>
                                 <textarea id='info' {...register("moreInfo")} className={styles.moreInformation} required/>
+                            </div>
+
+                            <div className={[styles.emailBanner, hasSentEmail && styles.emailSent].join(' ')}>
+                                <h4>Email Sent</h4>
+                                <Image src={require('/public/icons/tick.png')} alt='tick' />
                             </div>
 
                             <input type="submit" value="SUBMIT PROJECT" role='submit'/>

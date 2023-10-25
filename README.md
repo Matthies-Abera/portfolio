@@ -25,5 +25,4 @@ You can start editing the page by modifying `/src/app/page.tsx`. The page auto-u
 ## Possible Extension Features
 
 1. Create a database and migrate all mocked data to it.
-2. Create a modal pane upon contact form submission.
-3. Rework Navigation Bar or Contact components.
+2. Change "Contact" component inputs for timeline and budget to dropdown options and incorporate error checking prior to successful submissions.
