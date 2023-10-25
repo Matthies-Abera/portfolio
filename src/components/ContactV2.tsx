@@ -46,13 +46,13 @@ export default function ContactV2() {
                     <span className={styles.contact}>
                         <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
                             <div className={styles.formTextInput}>
-                                <label htmlFor="name">FULL NAME</label>
-                                <input type='text' id='name' {...register("name")} required/>
+                                <label htmlFor="name">FIRST NAME</label>
+                                <input type='text' id='name' {...register("name")} autoComplete='given-name' required/>
                             </div>
 
                             <div className={styles.formTextInput}>
                                 <label htmlFor="email">EMAIL ADDRESS</label>
-                                <input type='text' id='email' {...register("email")} required/>
+                                <input type='text' id='email' {...register("email")} autoComplete='email' required/>
                             </div>
 
                             <div className={styles.formTextInput}>
