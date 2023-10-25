@@ -37,7 +37,7 @@ export default function AboutMe() {
                         <ActionButton icon={require('/public/icons/sports.svg')} name='Sports' active={interest} function={() => handleInterest('sports')}/>
                         <ActionButton icon={require('/public/icons/explore.svg')} name='Explore' active={interest} function={() => handleInterest('explore')}/>
                         <ActionButton icon={require('/public/icons/cinema.svg')} name='Cinema' active={interest} function={() => handleInterest('cinema')}/>
-                        <ActionButton icon={require('/public/icons/photography.svg')} name='Photography' active={interest} function={() => handleInterest('photography')}/>
+                        <ActionButton icon={require('/public/icons/photography.svg')} name='Photography' active={interest} function={() => handleInterest('photograph')}/>
                     </div>
                 </div>
             </span>
