@@ -10,7 +10,7 @@ export interface FormRadioInput {
 }
 
 export interface Project {
-    image: typeof import("*.svg"),
+    image: typeof import("*.jpg"),
     name: string,
     description: string,
     stack: string[],

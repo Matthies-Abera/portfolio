@@ -24,11 +24,11 @@ input[type='radio']:after {
   border: 0.125rem solid var(--primary);
   content: '';
   display: inline-block;
-  height: 0.75rem;
-  left: -0.15rem;
+  height: 0.9rem;
+  left: -0.2rem;
   position: relative;
   top: -0.1rem;
-  width: 0.75rem;
+  width: 0.9rem;
 }
 
 input[type='radio']:checked:after {
@@ -121,14 +121,12 @@ ul {
   padding: 0;
 }
 
-/* TABLET */
 @media (min-width: 768px) {
   br {
     display: none;
   }
 }
 
-/* LAPTOP */
 @media (min-width: 1024px) {
   h1 {
     font-size: 2.5rem;
